@@ -10,7 +10,7 @@ int main() {
             printf("The Biggest is A:%d",a);
         }
         else {
-            printf("The Biggest is C%d",c);
+            printf("The Biggest is C:%d",c);
         }
     }
     else{
