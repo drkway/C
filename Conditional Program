@@ -1,0 +1,13 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<string.h>
+int main() {
+    int Daily_Train_Time=31;
+    char status;
+    status = (Daily_Train_Time>20) ? 'T':'F';
+    if (status=='T')
+    printf("On Time");
+    else
+    printf("Not On Time");
+    return 0;
+}
