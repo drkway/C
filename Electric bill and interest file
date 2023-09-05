@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main(){
+    int EB;
+    float discount,NEW;
+    printf("Enter Electricity bill:");
+    scanf("%d",&EB);
+    if ((EB>=2500)&&(EB<3500)){
+        discount=EB*10/100;
+        NEW=EB-discount;
+        printf("The Discount is:%f\n",discount);
+        printf("The new electricity bill is:%f",NEW);
+    }
+    else if((EB>=3500)&&(EB<5000)){
+        discount=EB*15/100;
+        NEW=EB-discount;
+        printf("The Discount is:%f\n",discount);
+        printf("The new electricity bill is:%f",NEW);
+    }
+    else if(EB<2500){
+        printf("No Discount");
+    }
+    else{
+        discount=EB*25/100;
+        NEW=EB-discount;
+        printf("The Discount is:%f\n",discount);
+        printf("The new electricity bill is:%f",NEW);
+    }
+    return 1;
+    
+        
+        
+    
+    
+}
