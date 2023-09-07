@@ -1,0 +1,32 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int p,q,r,s,min,max;
+    printf("Enter any 4 numbers:");
+    scanf("%d\n%d\n%d\n%d",&p,&q,&r,&s);
+    max=p;
+    min=p;
+    if(q<min){
+        min=q;
+    }
+    else if(q>max){
+        max=q;
+    }
+    if(r<min){
+        min=r;
+    }
+    else if(r>max){
+        max=r;
+    }
+    if(s<min){
+        min=s;
+    }
+    else if(s>max){
+        max=s;
+    }
+    printf("Largest Number from the given 4 numbers is %d\n",max);
+    printf("Smallest Number from the given 4 numbers is:%d",min);
+    return 0;
+    
+}
