@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    char character;
+    int lowercase,uppercase;
+    printf("Enter A Character:");
+    scanf("%c",&character);
+    lowercase=(character=='a'||character=='e'||character=='i'||character=='o'||character=='u');
+    uppercase=(character=='A'||character=='E'||character=='I'||character=='O'||character=='U');
+    if(lowercase||uppercase){
+        printf("It's Vowel");
+    }
+    else{
+        printf("It's Consonant");
+    }
+    return 0;
+}
