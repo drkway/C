@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int day;
+    printf("Enter A Num(1to7):");
+    scanf("%d",&day);
+    if(day==1){
+        printf("It's Monday");
+    }
+    else if(day==2){
+        printf("It's Tuesday");
+    }
+    else if(day==3){
+        printf("It's Wednesday");
+    }else if(day==4){
+        printf("It's Thursday");
+    }else if(day==5){
+        printf("It's Friday");
+    }
+    else if(day==6){
+        printf("It's Saturday");
+    }else if(day==7){
+        printf("It's Sunday");
+    }
+    return 0;
+}
