@@ -1,0 +1,10 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    int num,cube;
+    printf("Enter The Number:");
+    scanf("%d",&num);
+    cube=num*num*num;
+    printf("%d",cube);
+    return 0;
+}
