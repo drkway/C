@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main(){
+    int sum=0,rem,num,value;
+    printf("Enter Value:");
+    scanf("%d",&value);
+    num=value;
+        while(num){
+            rem=num%10;
+            sum=sum+(rem*rem*rem);
+            num=num/10;
+        }
+        if(sum==value){
+            printf("%d Is An An Armstrong Number\n",value);
+        }
+        else{
+            printf("%d is Not An Armstrong Number",value);
+        }
+        
+    return 0;
+}
