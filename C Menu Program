@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main(){
+    int ticket,ticketnum;
+    printf("Enter Theater No:\n");
+    printf("Theater No.1(OMG 2)\n");
+    printf("Theater No.2(Gadar 2)\n");
+    printf("Theater No.3(Jawaan)\n");
+    printf("Theater No.4(Bawaal)\n");
+    printf("Theater No.5(THE NUN 2)\n");
+    scanf("%d",&ticket);
+    switch(ticket){
+        case 1:
+        printf("Enter Number Of Tickets:");
+        scanf("%d",&ticketnum);
+        printf("Your Bill Is As Follows:₹%d\n",(ticketnum*400));
+        break;
+        case 2:
+        printf("Enter Number Of Tickets:");
+        scanf("%d",&ticketnum);
+        printf("Your Bill Is As Follows:₹%d\n",(ticketnum*300));
+        break;
+        case 3:
+        printf("Enter Number Of Tickets:");
+        scanf("%d",&ticketnum);
+        printf("Your Bill Is As Follows:₹%d\n",(ticketnum*500));  
+        break;
+        case 4:
+        printf("Enter Number Of Tickets:");
+        break;
+        scanf("%d",&ticketnum);
+        printf("Your Bill Is As Follows:₹%d\n",(ticketnum*200));  
+        break;
+        case 5:
+        printf("Enter Number Of Tickets:");
+        scanf("%d",&ticketnum);
+        printf("Your Bill Is As Follows:₹%d\n",(ticketnum*900));
+        break;
+    }
+    return 1;
+}
