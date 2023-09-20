@@ -26,7 +26,6 @@ int main(){
         break;
         case 4:
         printf("Enter Number Of Tickets:");
-        break;
         scanf("%d",&ticketnum);
         printf("Your Bill Is As Follows:₹%d\n",(ticketnum*200));  
         break;
