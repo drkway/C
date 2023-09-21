@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int i;
+    printf("The Loop With Continue Produce Output:\n");
+    for(i=1;i<=7;i++){
+        if(i==3){
+            break;
+        }
+        printf("%d",i);
+    }
+    return 1;
+}
