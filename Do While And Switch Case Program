@@ -10,16 +10,16 @@ void main ()
     switch(choice)  
     {  
         case 1 :   
-        printf("Hello");   
+        printf("Hello\n");   
         break;  
         case 2:    
-        printf("Javatpoint");  
+        printf("Javatpoint\n");  
         break;  
         case 3:  
         exit(0);   
         break;  
         default:   
-        printf("please enter valid choice");      
+        printf("please enter valid choice\n");      
     }  
     printf("do you want to enter more?");   
     scanf("%d",&dummy);  
