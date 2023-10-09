@@ -1,0 +1,58 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int choice,Value1,Value2;
+    float multiply,divide,add,subtract;
+    printf("Enter A Choice\n");
+    printf("Enter 1 for Add\n");
+    printf("Enter 2 for Subtract\n");
+    printf("Enter 3 for Divide\n");
+    printf("Enter 4 for Multiplication\n");
+    printf("Enter 5 for Exit\n");
+    while(choice!=5){
+        scanf("%d",&choice);
+        switch(choice){
+            case 1:
+                printf("Enter Value A:");
+                scanf("%d",&Value1);
+                printf("Enter Value B:");
+                scanf("%d",&Value2);
+                add=Value1+Value2;
+                printf("%d+%d=%0.2f\n",Value1,Value2,add);
+                continue;
+            case 2:
+                printf("Enter Value A:");
+                scanf("%d",&Value1);
+                printf("Enter Value B:");
+                scanf("%d",&Value2);
+                subtract=Value1-Value2;
+                printf("%d-%d=%0.2f\n",Value1,Value2,subtract);
+                continue;
+
+            case 3:
+                printf("Enter Value A:");
+                scanf("%d",&Value1);
+                printf("Enter Value B:");
+                scanf("%d",&Value2);
+                divide=Value1/Value2;
+                printf("%d/%d=%0.2f\n",Value1,Value2,divide);
+                continue;
+
+            case 4:
+                printf("Enter Value A:");
+                scanf("%d",&Value1);
+                printf("Enter Value B:");
+                scanf("%d",&Value2);
+                multiply=Value1*Value2;
+                printf("%d*%d=%0.2f\n",Value1,Value2,multiply);
+                continue;
+
+            case 5:
+                break;
+            default:
+                printf("Invalid Choice\n");
+        }
+    }
+    return 0;
+}
