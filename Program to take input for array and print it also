@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int i=0,marks[5];
+    int size=sizeof marks[0];
+    for(i=0;i<=4;i++){
+        printf("Enter The Value:");
+        scanf("\n%d",&marks[i]);
+    }
+    for(i=0;i<=4;i++){
+        printf("\n%d",marks[i]);
+    }
+    i=0;
+    while(i<=4){
+        printf("\n%d",marks[i]);
+        i++;
+    }
+}
