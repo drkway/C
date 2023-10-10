@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main(){
+    int i=0,marks[10]={2,9,3,7,1,8,2,5,2,6},biggest,biggest2;
+    int size=0;
+    // to find largest element in an array
+    biggest2=marks[0];
+    biggest=marks[0];
+    for(i=0;i<9;i++){
+        if(marks[i+1]>biggest){
+            biggest=marks[i+1];
+        }
+        else{
+            continue;
+        }
+    }
+    i=0;
+    for(i=1;i<9;i++){
+        if(biggest==biggest2){
+            continue;
+        }
+        else if(marks[i+1]>biggest2){
+             biggest2=marks[i+1];
+        }
+    }
+    printf("%d\n",biggest);
+    printf("%d",biggest2);
+    return 1;
+}
+    
+    
+   
