@@ -1,0 +1,35 @@
+#include<stdio.h>
+#define maxrow 10
+#define maxcol 10
+int main(){
+    int matrix[maxrow][maxcol]; // Inserting the values
+    int i,j,r,c;
+    int even,odd;
+    even=odd=0;
+    printf("Enter Number of Rows:");
+    scanf("%d",&r);
+    printf("Enter Number of Cols:");
+    scanf("%d",&c);
+    printf("\nEnter Matrix Elements:\n");
+    for(i=0;i<r;i++){
+	    for(j=0;j<c;j++){
+	        printf("Enter Elements[%d,%d];",i,j);
+	        scanf("%d",&matrix[i][j]);
+
+	    }
+    }
+    printf("\n"); // Print even if even num found as well as end program or get out of loop and print odd
+    for(i=0;i<r;i++){
+	    for(j=0;j<c;j++){
+		    if(matrix[i][j]%2==0){
+			    even++;
+			}
+		    else{
+		        odd++;
+		    }
+	    }
+    }
+    printf("The Number of EVEN is:%d\n",even);
+    printf("The Number Of ODD is:%d",odd);
+    return 0;
+}
