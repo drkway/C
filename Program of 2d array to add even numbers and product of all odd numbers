@@ -1,0 +1,42 @@
+#include<stdio.h>
+#define maxrow 10
+#define maxcol 10
+int main(){
+    int matrix[maxrow][maxcol]; // Inserting the values
+    int i,j,r,c;
+    int sum,produce;
+    printf("Enter Number of Rows:");
+    scanf("%d",&r);
+    printf("Enter Number of Cols:");
+    scanf("%d",&c);
+    printf("\nEnter Matrix Elements:\n");
+    for(i=0;i<r;i++){
+	    for(j=0;j<c;j++){
+	        printf("Enter Elements[%d,%d];",i,j);
+	        scanf("%d",&matrix[i][j]);
+
+	    }
+    }
+    for(i=0;i<r;i++){ //Print the 2d array
+	    for(j=0;j<c;j++){
+	        printf("Elements[%d,%d]:=",i,j);
+	        printf("%d\t",matrix[i][j]);
+	    }
+	    printf("\n");
+    }
+     int multiply=1;
+     sum=0;
+    printf("\n"); // Sum Of even and product of all odds
+    for(i=0;i<r;i++){
+	    for(j=0;j<c;j++){
+		    if(matrix[i][j]%2==0){
+			    sum+=matrix[i][j];
+			}
+		    else{
+			    multiply=multiply*matrix[i][j];
+		    }
+	    }
+    }
+    printf("The Sums of even is: %d and product of odd is : %d",sum,multiply);
+}
+
