@@ -29,7 +29,6 @@ int main(){
     for(j=0;j<c;j++){ //sum of all columns
         sum=0;
         for(i=0;i<r;i++){
-            printf("%d\t",matrix[i][j]);
             sum+=matrix[i][j];
         }
         printf("The Sum Of Column %d is:%d",j,sum);
