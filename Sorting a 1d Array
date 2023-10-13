@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int i=0,marks[5],j,temp;
+    int size=sizeof marks[0];
+    for(i=0;i<=4;i++){
+        printf("Enter The Value:");
+        scanf("\n%d",&marks[i]);
+    }
+    for(i=0;i<=4;i++){
+        printf("%d\t",marks[i]);
+    }
+    printf("\n");
+    for(i=0;i<5;i++){
+        for(j=i+1;j<5;j++){
+            if(marks[i]>marks[j]){
+                temp=marks[i];
+                marks[i]=marks[j];
+                marks[j]=temp;
+            }
+            else{
+                marks[i]=marks[i];;
+            }
+        }
+    }
+    for(i=0;i<=4;i++){
+        printf("%d\t",marks[i]);
+    }
+}
