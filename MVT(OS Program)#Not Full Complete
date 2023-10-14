@@ -17,19 +17,24 @@ printf("\n\nPROCESS\tMEMORYREQUIRED\tALLOCATED\tINTERNAL FRAGMENTATION");
 
 for(i=0;i<mp[10] && p<ms;i++)
 {
-     printf("\n %d\t\t\t%d",i+1,mp[i]);
-     if(mp[i] > ms)
-     printf("\t\t\tNO\t\t---"); 
-else
-    {
+    printf("\n %d\t\t\t%d",i+1,mp[i]);
+     
+    if(mp[i]>=ms) 
+    printf("\t\t\tNO\t\t---");
+    else{
     printf("\t\t\tYES\t\t\t\t%d",tif);
-    ef=ef-mp[i];
+    ms=ms-mp[i];
     p++;
     }
 }
-if(i<mp[10])
-     printf("\nMemory is Full, Remaining Processes cannot be accomodated"); 
-     printf("\n\nTotal Internal Fragmentation is %d",tif);
-     printf("\nTotal External Fragmentation is %d",ef); 
+if(ef<0){
+    printf("\nMemory is Full, Remaining Processes cannot be accomodated");
+    ef=0;
+    printf("\n\nTotal External Fragmentation is %d",ms);
+}
+else{
+    printf("\n\nTotal Internal Fragmentation is %d",tif);
+    printf("\nTotal External Fragmentation is %d",ms); 
+}
 return 0;
 }
