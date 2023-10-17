@@ -1,0 +1,14 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void display(int agearray[],int i){
+    i=0;
+    for(i=0;i<5;i++){
+        printf("The Array Elements Are As Follows:%d\n",agearray[i]);
+    }
+}
+int main() {
+    int i=0;
+    int agearray[]={2,4,5,2,5};
+    display(agearray,5);
+    return 0;
+}
