@@ -1,0 +1,37 @@
+#include <stdio.h>
+void Sort(int agearray[],int i){
+    int temp;
+    int j;
+    // Sorting An Array
+    printf("\n");
+    for(i=0;i<5;i++){
+        for(j=i+1;j<5;j++){
+            if(agearray[i]>agearray[j]){
+                temp=agearray[i];
+                agearray[i]=agearray[j];
+                agearray[j]=temp;
+            }
+            else{
+                agearray[i]=agearray[i];;
+            }
+        }
+    }
+    // Displaying the Array
+    for(i=0;i<=4;i++){
+        printf("%d\t",agearray[i]);
+    }
+
+}
+int main() {
+    int i=0;
+    int agearray[]={2,4,5,2,5};
+    printf("The Unsorted List Is As Follows:");
+    printf("\n");
+    for(i=0;i<=4;i++){
+        printf("%d\t",agearray[i]);
+    }
+    printf("\n");
+    printf("The Sorted List Is As Follows:");
+    Sort(agearray,5);
+    return 0;
+}
