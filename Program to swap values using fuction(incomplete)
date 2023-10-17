@@ -5,11 +5,11 @@ void swap(int var1,int var2){
     temp=var1;
     var1=var2;
     var2=temp;
+    printf("After Swapping Value of var and var2 is:%d,%d\n",var1,var2);
 }
 int main() {
     int var1=5,var2=9;
     printf("Before Swapping Value of var and var2 is:%d,%d\n",var1,var2);
     swap(var1,var2);
-    printf("After Swapping Value of var and var2 is:%d,%d\n",var1,var2);
     return 0;
 }
