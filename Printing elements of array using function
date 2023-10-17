@@ -1,0 +1,11 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void display(int agee1,int agee2){
+    printf("%d\n",agee1);
+    printf("%d\n",agee2);
+}
+int main() {
+    int agearray[]={2,4,5,2,5};
+    display(agearray[0],agearray[1]);
+    return 0;
+}
