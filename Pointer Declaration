@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int value = 50;
+    int *point; 
+    point=&value;
+    printf("The Address of value is:%x\n",&value);
+    printf("The Address stored in point is:%x\n",point);
+    printf("The Value Stored in point is:%d\n",*point);
+    return 0;
+    
+}
