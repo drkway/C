@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int array[]={6,51,21,7,9,132,71,22,123,4};
+    int *p1;
+    int *p2;
+    int i;
+    p1=&array;
+    p2=&array[4];
+    // Printing an whole array using an pointer
+    for(i=0;i<10;i++){
+        printf("%d\n",*(p1+i));
+    }
+    
+    return 0;
+}
