@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE cybershop[
+<!ELEMENT cybershop (products)>
+<!ELEMENT products (product_1)>
+<!ELEMENT product_1 (name,desc,price,quant)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT quant (#PCDATA)>
+]>
+<cybershop>
+    <products>
+        <product_1>
+            <name>Table</name>
+            <desc>Its just an table</desc>
+            <price>10,000</price>
+            <quant>50</quant>
+        </product_1>
+    </products> 
+</cybershop>
