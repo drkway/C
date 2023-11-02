@@ -12,6 +12,6 @@ int main() {
         b*=x;
     }
     a=b;
-    printf("The %d to the power of %d is:%d",x,n,a);
+    printf("The %d^%d is:%d",x,n,a);
     return 0;
 }
