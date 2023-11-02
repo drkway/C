@@ -1,0 +1,51 @@
+#include<stdio.h>
+#define maxrow 10
+#define maxcol 10
+int main(){
+    int matrix[maxrow][maxcol];
+    int i,j,r,c;
+    int max,min;
+    printf("Enter Number of Rows:");
+    scanf("%d",&r);
+    printf("Enter Number of Cols:");
+    scanf("%d",&c);
+    
+    
+    
+    printf("\nEnter Matrix Elements:");  //Insering Elements
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+            printf("Enter Elements[%d,%d];",i,j);
+            scanf("%d",&matrix[i][j]);
+
+        }
+    }
+    max=0;
+    printf("\n"); // Max
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+            if(matrix[i][j]>max){
+                max=matrix[i][j];
+            }
+            else{
+                max=max;
+            }
+        }
+    }
+    
+    min=matrix[0][0];
+    printf("\n"); // Min
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+            if(min>=matrix[i][j]){
+                min=matrix[i][j];
+            }
+            else{
+                min=min;
+            }
+        }
+    }
+    printf("The Max Value Is:%d\n",max);
+    printf("The Min Value Is:%d",min);
+
+}
