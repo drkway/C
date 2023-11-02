@@ -8,8 +8,13 @@ int main() {
     printf("Input The Power Of Int:");
     scanf("%d",&n);
     int x=b;
-    for(i=1;i<n;i++){
-        b*=x;
+    if(n!=0){
+        for(i=1;i<n;i++){
+            b*=x;
+        }   
+    }
+    else{
+        b=1;
     }
     a=b;
     printf("The %d^%d is:%d",x,n,a);
