@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    int a,b,n;
+    int i;
+    printf("Input An Integer To Calculate Power Of:");
+    scanf("%d",&b);
+    printf("Input The Power Of Int:");
+    scanf("%d",&n);
+    int x=b;
+    for(i=1;i<n;i++){
+        b*=x;
+    }
+    a=b;
+    printf("The %d to the power of %d is:%d",x,n,a);
+    return 0;
+}
