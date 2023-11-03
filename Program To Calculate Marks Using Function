@@ -1,0 +1,25 @@
+#include<stdio.h>
+int percent(int tot);
+int main(){
+    int mark1,mark2,mark3,total;
+    printf("Input Marks Of Science Out of 100:");
+    scanf("%d",&mark1);
+    printf("Input Marks Of English Out Of 100:");
+    scanf("%d",&mark2);
+    printf("Input Marks Of Maths Out Of 100:");
+    scanf("%d",&mark3);
+    total=mark1+mark2+mark3;
+    percent(total);
+    return 0;
+}
+int percent(int tot){
+    int per;
+    per=(tot*100)/300;
+    printf("The Percentage is:%d%\n",per);
+    if(per>=33){
+        printf("The Student Has Passed The Exam");
+    }
+    else{
+        printf("The Student Has Failed The Exam");
+    }
+}
