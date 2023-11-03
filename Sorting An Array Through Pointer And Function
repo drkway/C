@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int iterate(int *ptr){
+    printf("The Unsorted Array is As Follows:\n");
+    int i,j;
+    int temp;
+    int *ptr2=ptr;
+    for(i=0;i<6;i++){
+        printf("%d\t",*(ptr+i));
+    }
+    printf("\n");
+    printf("Sorting An Array Through Function\n");
+    for(i=0;i<6;i++){
+        for(j=i+1;j<6;j++){
+            if(*(ptr+i)>*(ptr2+j)){
+                temp=*(ptr+i);
+                *(ptr+i)=*(ptr2+j);
+                *(ptr2+j)=temp;
+            }
+        }
+    }
+    for(i=0;i<6;i++){
+        printf("%d\t",*(ptr+i));
+    }
+}
+int main() {
+    int array[]={3,2,1,6,4,9};
+    printf("Iterating A List Through Function\n");
+    iterate(array);
+    return 0;
+}
