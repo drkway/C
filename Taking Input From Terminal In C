@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(int argc,int *argv[]) {
+    int i;
+    printf("The Program Name Is:%s\n",argv[0]);
+    if(argc<2){
+        printf("No Argument Paassed");
+    }
+    else{
+        for(i=0;i<argc;i++){
+            printf("The Arguments argv[%d] is %s\n",i,argv[i]);
+        }
+    }
+    
+}
