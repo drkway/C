@@ -1,0 +1,11 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    int myred[3][5]={{3,2,3,4,1},{6,1,7,23,1},{323,32,23,5321,32}};
+    int i,j;
+    for(i=0;i<3;i++){
+        for(j=0;j<5;j++){
+            printf("myred[%d][%d]:%d\n",i,j,myred[i][j]);
+        }
+    }
+}
