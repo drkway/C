@@ -1,0 +1,12 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct mystruct{
+    int a;
+    char y;
+    char x[50];
+};
+
+int main() {
+    struct mystruct h1={6,'3',"Hello World"};
+    printf("%d %c %s",h1.a,h1.y,h1.x);
+}
