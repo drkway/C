@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct mystruct{
+    char name[50];
+    int id;
+    char branch[30];
+};
+int main() {
+    int val;
+    int i;
+    printf("For How Many Students You Want To Enter Records:");
+    scanf("%d",&val);
+    struct mystruct h1[val];
+    for(i=0;i<val;i++){
+        printf("\n");            //For Inputing Values Into The Array
+        printf("Enter Name Of Student:");
+        scanf("%s",&h1[i].name);
+        printf("Enter ID Of Student:");
+        scanf("%d",&h1[i].id);
+        printf("Enter Branch Of Student:");
+        scanf("%s",&h1[i].branch);
+    }
+    printf("Student Details");
+    for(i=0;i<val;i++){
+        printf("\n");        //For Output
+        printf("Student-%d\n",i+1);
+        printf("Name-%s\n",h1[i].name);
+        printf("ID-%d\n",h1[i].id);
+        printf("Branch-%s\n",h1[i].branch);
+    }
+}
