@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<string.h>
+struct car{
+    char name[40];
+    int price;
+};
+void vehicle(struct car cx[10]){
+    printf("Car Name: %s, Car Price: %d",cx[0].name,cx[0].price);
+}
+int main() {
+    struct car cx[10];
+    cx[0].price=2324;
+    strcpy(cx[0].name,"Syxze");
+    vehicle(cx);
+    return 0;
+}
