@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+struct student{
+    int roll_no;
+    char name[50];
+    char branch[50];
+    int batch;
+};
+int main() {
+    struct student s1;
+    struct student *ptr=&s1;
+    s1.roll_no=27;
+    strcpy(s1.name,"Vikas Chauhan");
+    strcpy(s1.branch,"Computer Science And Engineering");
+    s1.batch=2021;
+    printf("Roll Number:%d\n",(*ptr).roll_no);
+    return 0;
+}
