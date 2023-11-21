@@ -7,6 +7,6 @@ function factorial($number) {
         return ($number * factorial($number-1));
     }
 }
-
-echo factorial(5);
+$a=(int)readline("Enter The Number To Find Factorial Of:");
+echo factorial($a);
 ?>
