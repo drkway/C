@@ -1,0 +1,173 @@
+
+ #include <stdio.h>
+ #include <string.h>
+ struct Book {
+
+ char name[100];
+
+ char author[100];
+
+ char edition[20];
+
+ int year;
+
+ float price;
+
+ };
+
+ void addBook(struct Book library [], int index) {
+
+ printf("Enter book details:\n");
+
+ printf("Name: ");
+
+ scanf("%s", library [index].name);
+
+ printf("Author: ");
+
+scanf("%s", library [index].author);
+
+ printf("Edition: ");
+
+ scanf("%s", library [index].edition);
+
+ printf("Year of Publishing: ");
+ scanf("%d", &library [index].year);
+
+ printf("Price: ");
+
+ scanf("%f", &library [index].price);
+ }
+
+
+
+ void displayBook(struct Book book) {
+
+ printf("Name: %s\n", book.name);
+
+ printf("Author: %s\n", book.author);
+
+ printf("Edition: %s\n", book.edition);
+
+ printf("Year of Publishing: %d\n", book.year);
+
+ printf("Price: %.2f\n", book.price);
+ }
+ 
+ int searchBook(struct Book library [], int count, char searchName[]){
+
+ for (int i = 0; i < count; i++) {
+
+ if (strcmp(library[i].name, searchName) == 0)  
+ return i; // Book found at index i
+
+ }
+
+
+
+ return -1; // Book not found
+
+ }
+
+ int main() {
+
+ struct Book library[100];
+
+ int bookCount = 0;
+
+ int choice;
+
+ char searchName[100];
+
+ do {
+
+ printf("\nLibrary Management System\n");
+
+ printf("1. Add Book\n");
+
+ printf("2. Display Book\n");
+
+ printf("3. Search Book\n");
+
+ printf("4. Exit\n");
+
+ printf("Enter your choice: ");
+
+ scanf("%d", &choice);
+
+ switch (choice) {
+
+ case 1:
+
+ if (bookCount < 100) {
+
+ addBook(library, bookCount);
+
+ bookCount++;
+ }
+
+ else {
+
+ printf("Library is full. Cannot add more books.\n");
+
+}
+
+ break;
+
+ case 2:
+
+ printf("Enter the book name to display: ");
+
+ scanf("%s", searchName);
+
+ int foundIndex = searchBook(library, bookCount, searchName);
+
+ if (foundIndex != -1) {
+
+ displayBook(library [foundIndex]);
+ 
+ } else {
+
+ printf("Book not found \n");
+
+ }
+
+ break;
+
+ case 3:
+
+ printf("Enter the book name to search: ");
+
+ scanf("%s", searchName);
+
+ int searchindex = searchBook(library, bookCount, searchName);
+
+ if (searchindex != -1) {
+
+ printf("Book found at index %d\n", searchindex);
+
+ } else {
+
+printf("Book not found.\n");
+
+ }
+
+ break;
+
+ case 4:
+
+ printf("Exiting the program.\n");
+
+ break;
+
+ default:
+
+ printf("Invalid choice. Please try again.\n");
+
+ }
+ }
+ while (choice != 4);
+ return 0;
+ }
+ 
+
