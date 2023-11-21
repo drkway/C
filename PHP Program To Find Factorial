@@ -1,0 +1,9 @@
+<?php
+$num=5;
+$fact=1;
+for($i=0;$i<5;$i++){
+    $fact=$fact*$num;
+    $num=$num-1;
+}
+echo "The Factorial Is:$fact"
+?>
