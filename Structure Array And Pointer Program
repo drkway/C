@@ -12,14 +12,15 @@ int main() {
     int i;
     ptr=&s[0];
     for(i=0;i<3;i++){
-        printf("Enter Details Of Student %d\n",i+1);
-        printf("Enter The Roll Number Of Students:");
+        printf("Enter Details Of Student %d",i+1);
+        printf("\n");
+        printf("Enter The Roll Number Of Student:");
         scanf("%d",&ptr->roll_no);
-        printf("Enter The Name Of Students:\n");
+        printf("Enter The Name Of Student:");
         scanf("%s",&ptr->name);
-        printf("Enter The Branch Of Students:");
+        printf("Enter The Branch Of Student:");
         scanf("%s",&ptr->branch);
-        printf("Enter The Batch Of Students:");
+        printf("Enter The Batch Of Student:");
         scanf("%d",&ptr->batch);
         ptr++;
     }
@@ -30,5 +31,6 @@ int main() {
         printf("The Name Is %s\n",ptr->name);
         printf("The Branch Is %s\n",ptr->branch);
         printf("The Batch Is %d\n",ptr->batch);
+        ptr++;
     }
 }
