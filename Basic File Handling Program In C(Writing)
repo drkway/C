@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    FILE *ptr;
+    int id;
+    char name[50];
+    int salary;
+    if(ptr=fopen("Hello.txt","w+")){
+        printf("File Opened Successfully\n");
+        printf("Making A Program To Take Input From User And Store It In A File\n");
+        printf("Enter Id:");
+        scanf("%d",&id);
+        getchar();
+        fprintf(ptr,"Id=%d",id);
+        printf("Enter Name:");
+        fgets(name,50,stdin);
+        fprintf(ptr,"Name=%s",name);
+        printf("Enter Salary:");
+        scanf("%d",&salary);
+        fprintf(ptr,"Salary=%d\n",salary);
+        fclose(ptr);
+    }
+    else{
+        printf("File Did Not Opened");
+    }
+}
