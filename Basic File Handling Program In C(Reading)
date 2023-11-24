@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    FILE *ptr;
+    if(ptr=fopen("Hello.txt","r")){
+        printf("File Opened Successfully\n");
+        char c;
+        while(1){
+            c=getc(ptr);
+            if(c==EOF){
+                break;
+            }
+            printf("%c",c);
+        }
+        printf("\nSuccessfully Read From The Rile Using Getc\n");
+        rewind(ptr);
+        char d[100];
+        while(fgets(d,100,ptr)){
+        printf("%s",d);
+        }
+    }
+    else{
+        printf("File Did Not Opened");
+    }
+
+}
