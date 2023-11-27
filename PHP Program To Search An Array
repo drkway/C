@@ -1,0 +1,15 @@
+<?php
+    $key=11;
+    $flag=0;
+    $array1=array(52,3,1,0,11,22,95,43);
+    for($i=0;$i<count($array1);$i++){
+        if($array1[$i]==$key){
+            echo "The Location is:",$i+1;
+            $flag=1;
+            break;
+        }
+    }
+    if($flag==0){
+        echo "Key Not Found";
+    }
+?>
