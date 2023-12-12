@@ -1,35 +1,32 @@
 #include<stdio.h>
-int main(){
-    int i=0,marks[10]={2,9,3123123,2,1,8,3122,532,2,6},biggest,biggest2;
-    int size=0;
-    // to find largest element in an array
-    biggest2=marks[0];
-    biggest=marks[0];
-    for(i=0;i<9;i++){
-        if(marks[i+1]>biggest){
-            biggest=marks[i+1];
-        }
-        else{
-            biggest=biggest;
-        }
-    }
-    if(biggest==marks[1]){
-        biggest2=marks[2];
-    }
-    else{
-        biggest2=marks[1];
-    }
-    for(i=0;i<9;i++){
-        if(marks[i]>biggest2 && marks[i]!=biggest){
-            biggest2=marks[i];
-        }
-        else if(biggest>biggest2){
-            biggest2=biggest2;
+
+int main() {
+    int i = 0, marks[10] = {2, 9, 3123123, 2, 1, 8, 3122, 532, 2, 6}, biggest, biggest2;
+
+    // to find the largest element in an array
+    biggest2 = marks[0];
+    biggest = marks[0];
+
+    for (i = 0; i < 10; i++) {
+        if (marks[i] > biggest) {
+            biggest = marks[i];
         }
     }
-    
-    printf("%d\n",biggest);
-    printf("%d",biggest2);
-    return 1;
+
+    if (biggest == marks[0]) {
+        biggest2 = marks[1];
+    } else {
+        biggest2 = marks[0];
+    }
+
+    for (i = 0; i < 10; i++) {
+        if (marks[i] > biggest2 && marks[i] != biggest) {
+            biggest2 = marks[i];
+        }
+    }
+
+    printf("%d\n", biggest);
+    printf("%d", biggest2);
+
+    return 0;
 }
-    
