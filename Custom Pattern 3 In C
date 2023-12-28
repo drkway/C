@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() 
+{ 
+    int rows = 5; 
+  
+    for (int i = 1; i <= rows; i++) { 
+        for (int j = 0; j < rows - i; j++) {
+            for(int x=0;x<rows-1;x++){
+                printf("H");
+            }
+            printf(" "); 
+        }
+        for (int k = 1; k <= i; k++){
+            printf("* * H * * ");
+        } 
+        for (int j = 0; j < rows - i; j++) {
+                for(int x=0;x<rows-1;x++){
+                    printf("H");
+                }
+                    printf(" "); 
+            }
+        
+        printf("\n"); 
+    } 
+    return 0; 
+
+}
